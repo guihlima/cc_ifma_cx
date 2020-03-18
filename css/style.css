@@ -1,0 +1,296 @@
+/*limpar formataçoes padroes do navegador*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 12px;
+    font-family: "Trebuchet MS", sans-serif, Helvetica;
+}
+ul{
+    padding: 0px !important;
+}
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+.menu-principal{
+    width: 100%;
+    background-color: #E9F1DF;
+    height: 70px;
+    border-bottom: 3px solid #d8d8d8;
+}
+#logo{
+    padding: 8px 0;
+    float: left;
+}
+/* Formatação do menu de navegacao*/
+#menu{
+    float: right;
+    padding: 25px 0;
+}
+#menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 5px;
+    height: 45px;
+}
+#menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: initial;
+    color: #838383;
+    padding: 10px;
+}
+#menu ul li:hover{
+    border-bottom: 3px solid #013294;
+}
+#menu ul li a:hover{
+    color: #013294;
+}
+/*Estilizaçao banner*/
+.container-banner{
+    background-image: url(../img/banner2.jpg);
+    height: 585px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container-interno{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    height: auto;
+    margin-top: 200px;
+}
+.container-interno h1{
+    font-size: 5rem;
+    font-family: "Shodows into Light", sans-serif;
+}
+.container-interno h2{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: 400;
+}
+.container-interno a{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.botao-img{
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    border: 4px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+.botao-img:hover, .btn-img:active{
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+@media only screen and (max-width:920){
+    .container-interno{
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width:540){
+    .container-interno{
+        margin-top: 150px;
+    }
+    h1{
+        font-size: 5em;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+
+}
+.titulo-secao{
+    text-align: center;
+    width: 71%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #021440;
+}
+.titulo-secao p{
+    font-size: 30px;
+    color: seashell;
+}
+/* Estilização seção noticias*/
+.secao-noticias{
+    position: absolute;
+    background-color: #0477BF;
+    top: 600px;
+    width: 100%;
+    height: 700px;
+}
+.container-noticias{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.container-noticias .card-noticias{
+    position: relative;
+}
+.container-noticias .card-noticias .frente{
+    width: 320px;
+    height: 200px;
+    transition: 0.5s;
+}
+.container-noticias .card-noticias .frente.frente1{
+    position: relative;
+    background: #E9F1DF;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.container-noticias .card-noticias:hover .frente.frente1{
+    transform: translateY(0);
+    background: #021440;
+}
+
+.container-noticias .card-noticias .frente.frente1 .conteudo{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.container-noticias .card-noticias:hover .frente.frente1 .conteudo{
+    opacity: 1;
+}
+
+.container-noticias .card-noticias:hover .frente.frente1 .conteudo img{
+    max-width: 180px;
+}
+.container-noticias .card-noticias:hover .frente.frente1 .conteudo h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+.container-noticias .card-noticias .frente.frente2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+.container-noticias .card-noticias:hover .frente.frente2{
+    transform: translateY(0);
+}
+.container-noticias .card-noticias .frente.frente2 .conteudo p{
+    margin: 0;
+    padding: 0;
+}
+.container-noticias .card-noticias .frente.frente2 .conteudo a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 900;
+    padding: 5px;
+    border: 1px solid #333;
+}
+.container-noticias .card-noticias .frente.frente2 .conteudo a:hover{
+    background: #333;
+    color: #fff;
+}
+/*Estilização seçao Intituição*/
+.secao-inst{
+    background-color: #D9B504;
+    position: absolute;
+    width: 100%;
+    top: 1180px; 
+    height: 600px;   
+}
+.secao-inst .conteudo-inst{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+.secao-inst .conteudo-inst .mapa{
+    padding: 5px;
+}
+.secao-inst .conteudo-inst .mapa iframe{
+    padding: 3px;
+}
+.secao-inst .conteudo-inst .mapa:hover{
+    background-color: tomato;
+}
+.secao-inst .conteudo-inst .endereco-ext{    
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.secao-inst .conteudo-inst .endereco-int{
+    width: 600px;
+}
+.secao-inst .conteudo-inst .endereco-int h2{
+   padding: 10px;
+   margin-top: -50px;
+}
+.secao-inst .conteudo-inst .endereco-int p{
+    padding: 10px;
+}
+.secao-inst .conteudo-inst .endereco-int .redes-sociais-ifma{
+    padding: 10px;
+ }
+ .secao-inst .conteudo-inst .endereco-int .redes-sociais-ifma .fa{
+    color: #E9F1DF;
+    padding: 0 5px;
+ }
+ /*Estilização footer*/
+ footer{
+     background: #E9F1DF;
+     padding: 30px;
+     position: absolute;
+     width: 100%;
+     top: 1680px;
+ }
+ footer .autoria{
+    text-align: center;
+ }
+footer .autoria p{
+    margin: 6px 0;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+footer .autoria a{
+    color: black;
+    text-decoration: none;
+}
+footer .autoria a:hover{
+    color: #F5A503;
+}
